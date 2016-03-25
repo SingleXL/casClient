@@ -3,8 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.study</groupId>
-	<artifactId>singleJar</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>casClient</artifactId>
+	<version>0.01</version>
 	<packaging>jar</packaging>
 
 	<name>singleJar</name>

@@ -23,14 +23,12 @@ public class CusCASFilter extends CASFilter {
 	
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain fc) throws ServletException, IOException {
-		
 		if (excludeUrls != null) {
-
 			String realURl = ((HttpServletRequest) request).getRequestURI();
-
 			boolean isExit = false;
 			String[] urls = excludeUrls.split(";");
 			for (String url : urls) {
+				realURl = realURl.replaceAll("\\s","");
 				if (realURl.contains(url)) {
 					isExit = true;
 					break;
